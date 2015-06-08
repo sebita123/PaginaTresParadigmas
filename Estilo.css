@@ -43,27 +43,18 @@ background-image:url(Imagenes/bright_squares.png);
 
 }
 
-
-	
-	
-	
-
-		
-.aparecer{
-	width: 100px;
-	height: 500px;
-	background-color: transparent;
-	border: #FFF;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
-	
+.columna{
+	float: left;
+	width: 385px;
+	height: 200px;
+	background-image: url(Imagenes/bright_squares.png);
+	background-color: #990;
+	border:solid;
+	visibility:hidden;
 	}
-.medium{width:1200px;
-padding-top:20px;
-height:60px;
-}
+
+
+
 
 .contenedormenu{
 	width:1200px;
@@ -77,4 +68,3 @@ height:60px;
 	float:left;
 	
 	}
-
