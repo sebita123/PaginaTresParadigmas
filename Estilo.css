@@ -8,12 +8,15 @@
 	width:1200px;
 	height:auto;
 	alignment-adjust:central;	
+	margin-top:20px;
 
 }
 
 .desplazar{
-float:right;
-width:400px;	
+	float: right;
+	width: 400px;
+	height: auto;
+	font-family: "Aldo PC";
 }
 
 .margen1{

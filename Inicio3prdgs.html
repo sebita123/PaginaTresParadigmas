@@ -1,6 +1,11 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="Estilo.css">
+<link rel="stylesheet" type="text/css" href="jquery.shadow/jquery.shadow.css">
+<script src="jquery.shadow/jquery-1.5.min.js"></script>
+<script src="jquery.shadow/jquery.shadow.js"></script>
+<script src="Jqueryui/jquery-ui.js"></script>
+
 <style type="text/css">
 @import url("Aldo_PC/stylesheet.css");
 body,td,th {
@@ -13,6 +18,12 @@ body {
 	background-image: url(Imagenes/bright_squares.png);
 	background-repeat: repeat;
 }
+.y {
+	color: #009;
+}
+.contenedor .desplazar h1 {
+	color: #FF0;
+}
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
@@ -20,13 +31,36 @@ body {
 <body>
 
 
-<center><div class="margen1"></div></center>
+<center><div class="margen1">
+<div class="desplazar">
+  <p><img src="Imagenes/C-net-web-development-banner.png"  class="explode" width="150" height="150" /></p>
+</div>
+<div class="desplazar"><img src="Imagenes/ruby (1).png" class="explode" width="227" height="166" /></div>
+<div class="desplazar"><img src="Imagenes/pythonLogo.png" class="explode" width="238" height="166" /></div>
+
+</div></center>
 <center><div class="contenedor">
 <div class="desplazar">Hola</div>
 <div class="desplazar">Hola</div>
-<div class="desplazar">Hola</div>
+<div class="desplazar">
+  <h1>P<span class="y">y</span>thon:</h1></div>
 
-</div></center>
+</div>
+</center>
+<script>
+$("body").hide().fadeIn(1000);
+
+$(".margen1").hide().toggle("bounce",1000).shadow("raised");
+
+$(".explode").hide();
+$(".explode").hide().toggle("bounce",2000);
+$(".explode").mouseover(function(){
+	$(this).hide().toggle("shake",1000)
+	
+	});
+</script>
+
+
 
 </body>
 
