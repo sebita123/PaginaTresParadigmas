@@ -6,6 +6,8 @@
 <script src="jquery.shadow/jquery.shadow.js"></script>
 <script src="Jqueryui/jquery-ui.js"></script>
 
+<script src="mijavascript.js"></script>
+
 <style type="text/css">
 @import url("Aldo_PC/stylesheet.css");
 body,td,th {
@@ -24,6 +26,15 @@ body {
 .contenedor .desplazar h1 {
 	color: #FF0;
 }
+#apDiv1 {
+	background-color: #FFF;
+	position: absolute;
+	left: 654px;
+	top: 306px;
+	width: 89px;
+	height: 176px;
+	z-index: 1;
+}
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
@@ -31,6 +42,7 @@ body {
 <body>
 
 
+<div id="apDiv1">mnmnmnmnm</div>
 <center><div class="margen1">
 <div class="desplazar">
   <p><img src="Imagenes/C-net-web-development-banner.png"  class="explode" width="150" height="150" /></p>
@@ -41,48 +53,24 @@ body {
 </div>
 <center><div class="contenedor">
 
-<div class="desplazar" >jajajajajaj</div>
-<div class="desplazar">
-  <p>ajjajaaja	</p>
 
-</div>
-<div class="desplazar">
-  <div class="cont1" id="descripcion"> 
-  ¿Que es Python?</div>
- <div class="cont1">
-  tipo de lenguaje</div>
-<div class="cont1">jajaj</div>
 
-<div class="cont1"></div>
+<div class="contenedormenu">
+<div class="desplazar"></div>
+<div class="desplazar"></div>
+<div id="primero" class="desplazar" style="height:40px">
+<li id="queescch" ><center>¿Qué es C#?</center></li>
+<li>alklakla</li>
+<li>ñalñalña</li>
+<li></li>
 
-</div>
-
-</div></center>
+</div></div></div>
+</center>
 <script>
-$("body").hide().fadeIn(1000);
+inicial();
 
-$(".margen1").hide(0).toggle("bounce",2000).shadow("raised");
-$(".jquery-hide").hide();
-$(".explode").hide(0);
-$(".explode").hide(0).toggle("bounce",2000);
-$(".explode").mouseover(function(){
-	$(this).hide(0).toggle("shake",1000)
-	
-	});
-	$(".cont1").shadow("raised");
-	
-	$(".desplazar").hide(0).toggle("slide",2000)
 
-			$(".cont1").mouseover(function(){
-		$(this).hide(0).toggle("highlight",1000)
-});
-	
-	
-	
-		
 </script>
-
-
 
 </body>
 
