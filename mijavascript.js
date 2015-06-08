@@ -1,4 +1,5 @@
 function inicial(){
+	$("li").shadow("raised");
 $("#hide1").css("visibility","visible").hide();
 $("#hide2").css("visibility","visible").hide();
 $("#hide3").css("visibility","visible").hide();
@@ -24,29 +25,21 @@ $("#segundo").hide().toggle("bounce",3000);
 $("#tercero").hide().toggle("bounce",3000);
 $(".medium").hide().toggle("bounce",3000);
 
-			$(".cont1").mouseover(function(){
-		$(this).hide(0).toggle("highlight",1000)
 		
-});
-$(".cont2").mouseover(function(){
-		$(this).hide(0).toggle("highlight",1)});
-					$(".cont3").mouseover(function(){
-		$(this).hide(0).toggle("highlight",1000)});
-		
-		$("li").shadow("raised");
 
 	
-	$("li").mouseover(function(){
-		$(this).hide(0).toggle("highlight",1000);
+	$("li").click(function(){
+		$(this).hide(0).toggle("bounce",3000);
 		
 		});
+
 		
 		
 		
 		
 		$("#queescch").click(function(){
 			
-			$("#hide1").slideToggle(1000).shadow("raised").html("el lenguaje c#").css("font-family","Verdana, Geneva, sans-serif").css("color","#333").append("<div><h1> hello world</h1></div>");
+			$("#hide1").toggle("explode",1000).shadow("raised").html("el lenguaje c#").css("font-family","Verdana, Geneva, sans-serif").css("color","#000").append("<div><h1> C#</h1></div><div><p>es un lenguaje orientado a objetos, desarrollado por Microsoft el cual comenzó a ser parte de su plataforma .net, su sitaxis deriva de C y C++, este lenguaje fue creado en enero del año 1999</p></div>");
 			});
 		
 }
